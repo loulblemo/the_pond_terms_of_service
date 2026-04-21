@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Offline Chess - Privacy Policy & Terms of Service</title>
+  <link rel="icon" type="image/png" href="icon.png">
   <style>
     :root {
       color-scheme: light dark;
@@ -67,15 +68,36 @@
       color: var(--text);
     }
     footer { margin-top: 8px; }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .app-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 6px 24px color-mix(in oklab, #000 35%, transparent);
+    }
+    .hero-text { min-width: 0; flex: 1; }
   </style>
 </head>
 <body>
   <main>
     <section class="card">
-      <h1>Offline Chess Legal</h1>
-      <p class="muted">
-        Effective date: April 21, 2026
-      </p>
+      <div class="hero">
+        <img class="app-icon" src="icon.png" width="72" height="72" alt="Offline Chess app icon">
+        <div class="hero-text">
+          <h1>Offline Chess Legal</h1>
+          <p class="muted">
+            Published by GM.AI LTD · Effective date: April 21, 2026
+          </p>
+        </div>
+      </div>
       <nav aria-label="Legal sections">
         <a href="#privacy-policy">Privacy Policy</a>
         <a href="#terms-of-service">Terms of Service</a>
@@ -88,8 +110,8 @@
     <section id="privacy-policy" class="card">
       <h2>Privacy Policy</h2>
       <p>
-        Offline Chess is designed to run locally on your device. We do not collect, store,
-        sell, share, or process personal data through our own servers.
+        GM.AI LTD (“we”, “us”) publishes Offline Chess. The app is designed to run locally on your device.
+        We do not collect, store, sell, share, or process personal data through our own servers.
       </p>
 
       <h3>1) Data We Collect</h3>
@@ -126,8 +148,8 @@
     <section id="terms-of-service" class="card">
       <h2>Terms of Service</h2>
       <p>
-        By downloading, installing, or using Offline Chess, you agree to these Terms.
-        If you do not agree, do not use the app.
+        These Terms are between you and GM.AI LTD. By downloading, installing, or using Offline Chess,
+        you agree to these Terms. If you do not agree, do not use the app.
       </p>
 
       <h3>1) License and Acceptable Use</h3>
@@ -165,9 +187,9 @@
 
       <h3>5) Indemnification</h3>
       <p>
-        You agree to defend, indemnify, and hold harmless the developer from any claims, liabilities, damages, losses,
-        and expenses (including legal fees) arising out of your misuse of the app, violation of these Terms,
-        or violation of any law or third-party rights.
+        You agree to defend, indemnify, and hold harmless GM.AI LTD and its directors, officers, employees,
+        and contractors from any claims, liabilities, damages, losses, and expenses (including legal fees)
+        arising out of your misuse of the app, violation of these Terms, or violation of any law or third-party rights.
       </p>
 
       <h3>6) Availability and Updates</h3>
@@ -202,7 +224,7 @@
 
     <footer class="card">
       <p class="muted">
-        Contact: replace this line with your support email or website.
+        © GM.AI LTD · https://gm-ai.co.uk/
       </p>
     </footer>
   </main>
